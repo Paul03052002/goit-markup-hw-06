@@ -22,7 +22,6 @@ body {
     }
 
 }
-
 @media screen and (min-width: 768px) {
     .container{
         max-width: 768px;
@@ -175,7 +174,13 @@ font-family: "Roboto", sans-serif;
 .btn:focus {
  background-color:#404BBF;
 }
-
+.herobtn{
+    background-color: transparent;
+}
+.hero{
+    display: block;
+    fill: #2f2f37;
+}
 .section-two {
     padding-top: 120px;
     padding-bottom: 120px;
