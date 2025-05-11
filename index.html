@@ -654,5 +654,30 @@
         </form>
       </div>
     </div>
+    <script>
+      const modal = document.querySelector(".modal-window-big");
+      const openModalBtn = document.querySelector(".btn"); // кнопка "Order Service"
+      const closeModalBtn = document.querySelector(".close-btn");
+
+      openModalBtn.addEventListener("click", () => {
+        modal.classList.add("is-open");
+      });
+
+      closeModalBtn.addEventListener("click", () => {
+        modal.classList.remove("is-open");
+      });
+
+      window.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          modal.classList.remove("is-open");
+        }
+      });
+
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          modal.classList.remove("is-open");
+        }
+      });
+    </script>
   </body>
 </html>
