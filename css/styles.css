@@ -499,6 +499,8 @@ background-color: #F4F4FD;
     column-gap: 24px;
     flex-wrap: wrap;
     gap: 64px 24px;
+    display: flex;
+    flex-wrap: nowrap;
 }
 }
 
