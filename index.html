@@ -679,5 +679,25 @@
         }
       });
     </script>
+
+    <script>
+      const mobileMenu = document.querySelector(".mobile-menu");
+      const openMenuBtn = document.querySelector(".herobtn");
+      const closeMenuBtn = document.querySelector(".close-menu");
+
+      openMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.add("is-open");
+      });
+
+      closeMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.remove("is-open");
+      });
+
+      mobileMenu.addEventListener("click", (e) => {
+        if (e.target === mobileMenu) {
+          mobileMenu.classList.remove("is-open");
+        }
+      });
+    </script>
   </body>
 </html>
