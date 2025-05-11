@@ -135,6 +135,7 @@ padding-bottom: 24px;
     visibility: hidden;
     pointer-events: none;
     transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
+
 }
 .mobile-menu.is-open {
     display: block;
@@ -148,7 +149,10 @@ padding-bottom: 24px;
     padding-bottom: 40px;
     display: flex;
     flex-direction: column;
-     height: 100%
+    height: 100%;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .close-menu{
     position: absolute;
@@ -168,14 +172,33 @@ padding-bottom: 24px;
 }
 .nav-menu{
     margin-bottom: auto;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    list-style: none;
+    display: flex;
+}
+.menu-list{
+flex-direction: column;
+}
+
+.menu-list-second{
+    display: flex;
+    
+}
+.list-svgshka{
+ margin: 10px;   
 }
 .menu-punkt{
- font-weight: 700;
  font-size: 36px;
  line-height: 1.12;
  letter-spacing: 0.02em;
- color: #2e2f42;
- margin-bottom: 40px;
+ color: #2E2F42;
+ margin-bottom: 0;
+}
+.menu-first-link{
+    font-weight: 700;
+    
 }
 .menu-punkt:hover,
 .menu-punkt:focus{
@@ -183,6 +206,8 @@ padding-bottom: 24px;
 }
 .menu-addr{
     margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .contact-punkt{
     font-family: "Roboto", sans-serif;
@@ -202,6 +227,8 @@ padding-bottom: 24px;
 }
 .menu-links{
     width: 280px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .menu-list{
     display: flex;
@@ -224,13 +251,13 @@ padding-bottom: 24px;
 }
  @media screen and (min-width: 768px) {
      .mobile-menu {
-         display: none;
+        display: none;
      }
  }
 
  @media screen and (min-width: 1158px) {
      .mobile-menu {
-         display: none;
+        display: none;
      }
  }
 .grey{
