@@ -474,10 +474,6 @@ background-color: #F4F4FD;
 }
 
 @media screen and (min-width: 768px) {
-    .section-three {
-        padding-left: 92px;
-        padding-right: 92px;
-    }
 
     .the-photos {
         max-width: 552px;
@@ -492,11 +488,6 @@ background-color: #F4F4FD;
 }
 
 @media screen and (min-width: 1158px) {
-    .section {
-        padding: 120px 0;
-        width: 100%;
-    }
-
     .section-three {
         max-width: 1440px;
     }
@@ -506,6 +497,8 @@ background-color: #F4F4FD;
     margin: 0 auto;
     row-gap: 64px;
     column-gap: 24px;
+    flex-wrap: wrap;
+    gap: 64px 24px;
 }
 }
 
